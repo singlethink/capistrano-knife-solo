@@ -82,5 +82,6 @@ namespace :load do
     set :knife_node_path, "#{fetch(:tmp_dir)}/capistrano-knife-solo"
     set :knife_berkshelf, true
     set :knife_librarian, true
+    set :knife_clean_up,  true
   end
 end

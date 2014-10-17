@@ -28,6 +28,7 @@ module CapistranoKnifeSolo
       options[:sudo_command] = fetch(:knife_sudo_command) if fetch(:knife_sudo_command)
       options[:host_key_verify] = fetch(:knife_host_key_verify) if fetch(:knife_host_key_verify)
       options[:run_list] = roles_to_runlist(host)
+      options[:clean_up] = fetch(:knife_clean_up) if fetch(:knife_clean_up)
       return options
     end
 

@@ -67,6 +67,7 @@ set :knife_host_key_verify, false # don't verify ssh key
 set :knife_cookbook_path, %w{cookbooks site-cookbooks} # cookbook path relative to Capfile
 set :knife_berkshelf, true # use Berkshelf to update cookbooks if present
 set :knife_librarian, true # use librarian-chef to update cookbooks if present
+set :knife_clean_up,  true # clean up the kitchen directory after cooking
 ```
 
 
